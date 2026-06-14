@@ -6,7 +6,7 @@
     {
       "name": "voltage-time",
       "description": "Parse .cex/.nda/.ndax battery raw data and generate voltage versus time curve.",
-      "working_directory": "电池数据工具包",
+      "working_directory": "battery-data-toolkit",
       "preferred_command": ".venv\\Scripts\\python.exe -m battery_data_tool voltage-time --input \"<input_file>\" --output-dir \"<output_dir>\" --time-unit h",
       "fallback_command": "python -m battery_data_tool voltage-time --input \"<input_file>\" --output-dir \"<output_dir>\" --time-unit h",
       "input_extensions": [
@@ -22,8 +22,7 @@
     }
   ],
   "setup": {
-    "first_run": "Run 安装依赖.bat in the toolkit folder.",
+    "first_run": "Run install_dependencies.bat in the toolkit folder.",
     "requirements_file": "requirements.txt"
   }
 }
-

@@ -30,7 +30,7 @@ if "%~2"=="" (
 "%PY%" -m battery_data_tool voltage-time --input "%INPUT_FILE%" --output-dir "%OUTPUT_DIR%" --time-unit h
 if errorlevel 1 (
   echo.
-  echo Failed. If this is the first time using the toolkit, run 安装依赖.bat first.
+  echo Failed. If this is the first time using the toolkit, run install_dependencies.bat first.
   pause
   exit /b 1
 )

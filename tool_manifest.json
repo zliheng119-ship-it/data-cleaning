@@ -1,0 +1,29 @@
+{
+  "toolkit_name": "battery_data_tool",
+  "toolkit_description": "Portable battery data processing toolkit.",
+  "portable": true,
+  "commands": [
+    {
+      "name": "voltage-time",
+      "description": "Parse .cex/.nda/.ndax battery raw data and generate voltage versus time curve.",
+      "working_directory": "电池数据工具包",
+      "preferred_command": ".venv\\Scripts\\python.exe -m battery_data_tool voltage-time --input \"<input_file>\" --output-dir \"<output_dir>\" --time-unit h",
+      "fallback_command": "python -m battery_data_tool voltage-time --input \"<input_file>\" --output-dir \"<output_dir>\" --time-unit h",
+      "input_extensions": [
+        ".cex",
+        ".nda",
+        ".ndax"
+      ],
+      "outputs": [
+        "plot.svg",
+        "<input_stem>_voltage_time_data.xlsx"
+      ],
+      "time_unit_default": "h"
+    }
+  ],
+  "setup": {
+    "first_run": "Run 安装依赖.bat in the toolkit folder.",
+    "requirements_file": "requirements.txt"
+  }
+}
+

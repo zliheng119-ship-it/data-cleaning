@@ -1,0 +1,28 @@
+{
+  "template_name": "voltage_time_style",
+  "font": "Arial",
+  "font_size": 8,
+  "axis_line_width": 1.2,
+  "axes_closed": true,
+  "tick_width": 1.2,
+  "tick_length": 4,
+  "tick_direction": "out",
+  "line_width": 1.4,
+  "line_alpha": 0.95,
+  "figure_width_cm": 11.0,
+  "figure_height_cm": 6.0,
+  "time_unit": "h",
+  "xlabel": "Time (h)",
+  "ylabel": "Voltage (V)",
+  "xlim": null,
+  "ylim": null,
+  "colors": [
+    "#000000",
+    "#E64B35",
+    "#4DBBD5",
+    "#00A087",
+    "#3C5488",
+    "#F39B7F"
+  ]
+}
+
